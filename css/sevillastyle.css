@@ -1,0 +1,522 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    background-color: beige;  
+}
+
+.oculto {
+    font-weight: bold;
+    font-family: cormorant sc;
+    font-size: 28px;
+    margin-left: -12%;
+}
+
+/*css del menu desplegable*/
+
+.menu {
+    background-color: maroon;
+    color: white;
+    height: 50px; 
+}
+
+.menucontenedor {
+    font-family: poppins;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menulinks {
+    height: 100%;
+    transition: transform 0.5s;
+    display: flex;
+}
+
+.menuitem {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    width: 150px;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.menuitem:hover {
+    --clip: polygon(0 0, 100% 0,100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+
+.menulink {
+    margin-right: 3px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    height: 69%;
+    padding-top: 14px;
+    padding-left: 10px;
+}
+
+.menulink:hover {
+    color: black;
+    background-color: #E4871E;
+}
+
+.menuarrow {
+    transform: var(--transform);
+    transition: transform 0.3s;
+    display: block;
+    margin-left: 15px;
+    height: 26px;
+}
+
+.menunesting {
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: clip-path 0.3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: maroon;
+}
+
+.menulink--inside {
+    margin: 0;
+    padding: 10px 7px 10px 24px;
+    box-sizing: border-box;
+}
+
+.menulink--inside2 {
+    margin: 0;
+    padding: 10px 7px 10px 28px;
+    box-sizing: border-box;
+}
+
+.menulink--inside3 {
+    margin: 0;
+    padding: 10px 7px 10px 43px;
+    box-sizing: border-box;
+}
+
+.menulink--inside:hover {
+  background-color: #E4871E;
+}
+
+/*termina el css del menu*/
+
+.encabezado {
+    width: 80%;
+    margin: auto;
+    font-family: cormorant sc;
+    font-size: 100px;
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    font-family: cormorant sc;
+    width: 800px;
+    font-size: 70px;
+    margin: auto;
+}
+
+.enlace {
+    width: 90%;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: right;
+}
+
+.botonera {
+    width: 70%;
+    text-align: center;
+    margin:auto;
+    font-size: 24px;
+    font-family: century gothic;
+    
+}
+
+.contenedor {
+    background-image: url("backgrounds/Patio-de-Banderas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.izq1 {
+    font-family: arial;
+    width: 60%;
+    border-radius: 20px;
+    background-color: beige;
+    opacity: 0.8;
+    padding: 5px;
+}
+
+.drch1 {
+    margin: auto;
+}
+.img1 {
+    transition: transform 1s ease-in-out;
+}
+.img1:hover {
+    transform: scale(1.8);
+    cursor: zoom-in;
+}
+
+.contenedor2 {
+    background-image: url("backgrounds/italica-sevilla-796x530.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.drch2 {
+    font-family: arial;
+    width: 60%;
+    border-radius: 20px;
+    background-color: beige;
+    opacity: 0.8;
+    padding: 5px;
+}
+
+.izq2{
+    margin: auto;
+}
+
+.img2 {
+    border-radius: 10px;
+    width: 210px;
+    transition: transform 1s ease-in-out;
+}
+
+.img2:hover{
+    transform: scale(2.2);
+    cursor: zoom-in;
+}
+
+.img3 {
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 1s ease-in-out;
+}
+
+.img3:hover{
+    transform: scale(2.2);
+    cursor: zoom-in;
+}
+
+.contenedor3 {
+    background-image: url("backgrounds/mapa-sevilla-epidemias.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.img4 {
+    border-radius: 10px;
+    width: 350px;
+    transition: transform 1s ease-in-out;
+}
+
+.img4:hover {
+    transform: scale(1.9);
+    cursor: zoom-in;
+}
+
+.img5 {
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 1s ease-in-out;
+}
+
+.img5:hover {
+    transform: scale(1.9);
+    cursor: zoom-in;
+}
+
+.contenedor4 {
+    background-image: url("backgrounds/photo-1494616150024-f6040d5220c0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+
+.img6 {
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 1s ease-in-out;
+}
+
+.img6:hover {
+    transform: scale(2.2);
+    cursor: zoom-in;
+}
+
+.img7 {
+    border-radius: 10px;
+    width: 500px;
+    transition: transform 1s ease-in-out;
+}
+
+.img7:hover {
+    transform: scale(1.3);
+    cursor: zoom-in;
+}
+
+.img8 {
+    border-radius: 10px;
+    width: 290px;
+    transition: transform 1s ease-in-out;
+}
+
+.img8:hover {
+    transform: scale(2);
+    cursor: zoom-in;
+}
+
+.img9 {
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 1s ease-in-out;
+}
+
+.img9:hover {
+    transform: scale(1.7);
+    cursor: zoom-in;
+}
+
+.contenedor5 {
+    background-image: url("backgrounds/Bodega-Santa-Cruz-Tapas-de-Sevilla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.img10 {
+    border-radius: 10px;
+    width: 240px;
+    transition: transform 1s ease-in-out;
+}
+
+.img10:hover {
+    transform: scale(2.6);
+    cursor: zoom-in;
+    
+}
+
+.img11 {
+    border-radius: 10px;
+    width: 240px;
+    transition: transform 1s ease-in-out;
+}
+
+.img11:hover {
+    transform: scale(2.8);
+    cursor: zoom-in;
+}
+
+.img12 {
+    border-radius: 10px;
+    width: 240px;
+    transition: transform 1s ease-in-out;
+}
+
+.img12:hover {
+    transform: scale(2.7);
+    cursor: zoom-in;
+}
+
+.contenedor6 {
+    background-image: url("backgrounds/juderia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.img13 {
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 1s ease-in-out;
+}
+
+.img13:hover {
+    transform: scale(1.8);
+    cursor: zoom-in;
+}
+
+.contenedor7 {
+    background-image: url("backgrounds/hotel-exe-sevilla-macarena_171602817111.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.img14 {
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 1s ease-in-out;
+}
+
+.img14:hover {
+    transform: scale(2.6);
+    cursor: zoom-in;
+}
+
+.contenedor8 {
+    background-image: url("backgrounds/a13.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.contenedor9 {
+    background-image: url("backgrounds/pasillo_conser.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.area1:hover {
+    cursor: pointer;
+}
+
+.contenedor10 {
+    background-image: url("backgrounds/torre-sevilla-728.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.contenedor11 {
+    background-image: url("backgrounds/av_imagen.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.contenedor12 {
+    background-image: url("backgrounds/bullring-187844_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.contenedor13 {
+    background-image: url("backgrounds/GettyImages-1629364009.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.img15 {
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 1s ease-in-out;
+}
+
+.img15:hover {
+    transform: scale(1.6);
+    cursor: zoom-in;
+}
+
+.contenedor14 {
+    background-image: url("backgrounds/Cartuja_de_Santa_María_de_la_Cuevas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.contenedor15 {
+    background-image: url("backgrounds/25.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.contenedor16 {
+    background-image: url("backgrounds/beautiful-view-plaza-de-espana-seville-spain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.contenedor17 {
+    background-image: url("backgrounds/shutterstock_1336593305-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.contenedor18 {
+    background-image: url("backgrounds/dom-1630295_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
